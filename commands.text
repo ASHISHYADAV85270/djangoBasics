@@ -1,0 +1,2 @@
+python manage.py startapp appname  => for creating a app inside a DJango Project 
+python manage.py runserver portNumber => for running the server
