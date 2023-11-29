@@ -1,2 +1,6 @@
 python manage.py startapp appname  => for creating a app inside a DJango Project 
 python manage.py runserver portNumber => for running the server
+
+
+
+#TEMPLATES => iskai andar html files bgera daaltai hai .. this is a general name given to the folder and yeah django detect krleta hai

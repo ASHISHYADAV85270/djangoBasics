@@ -6,9 +6,34 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="" />
     <link rel="icon" href="favicon.png" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <p>I am home page</p>
+    <h2>I am home page</h2>
+
+    <table style="width: 100%">
+      <tr>
+        <th>S.NO</th>
+        <th>name</th>
+        <th>age</th>
+        <th>CanVote</th>
+      </tr>
+      {% for people in peoples %}
+      <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{people.name}}</td>
+        <td>{{people.age}}</td>
+        <td>{%if people.age >= 18 %} 👍 {%else%} 👎 {%endif%}</td>
+      </tr>
+      {% endfor%}
+    </table>
+
+    <p>To understand the example better, we have added borders to the table.</p>
   </body>
 </html>
